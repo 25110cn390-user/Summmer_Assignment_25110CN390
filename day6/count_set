@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+//wap to count the number of set bits in a given number
+int main()
+{
+    int n, count = 0;
+    printf("Enter a decimal number: ");
+    scanf("%d", &n);
+    
+    while(n > 0)
+    {
+        if(n % 2 == 1)
+        {
+            count++;
+        }
+        n = n / 2;
+    }
+    
+    printf("Number of set bits: %d\n", count);
+    
+    return 0;
+}

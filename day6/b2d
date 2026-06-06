@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+//wap to convert binary to decimal
+int main()
+{
+    int binary[32], decimal = 0, i = 0, n;
+    printf("Enter the number of bits: ");
+    scanf("%d", &n);
+    
+    printf("Enter the binary number: ");
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &binary[i]);
+    }
+    
+    for(i = 0; i < n; i++)
+    {
+        decimal = decimal + binary[n - 1 - i] * pow(2, i);
+    }
+    
+    printf("Decimal representation is : %d\n", decimal);
+    
+    return 0;
+}

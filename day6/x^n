@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+//wap to find x^n without using pow function
+int main(){
+    int x,n,ans=1;
+    printf("enter the number and the power: ");
+    scanf("%d%d",&x,&n);
+    for(int i=1;i<=n;i++){
+        ans=ans*x;
+    }
+    printf("the result is: %d",ans);
+    return 0;
+}
