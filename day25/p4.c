@@ -13,8 +13,6 @@ int main() {
     
     // removes newline character if present
     str[strcspn(str, "\n")] = '\0';
-
-    // Step 1: Tokenize the sentence into separate words
     char *token = strtok(str, " ");
     while (token != NULL && wordCount < 20) {
         strcpy(words[wordCount], token);
